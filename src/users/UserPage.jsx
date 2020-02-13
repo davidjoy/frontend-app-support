@@ -7,6 +7,7 @@ import { camelCaseObject, history } from '@edx/frontend-platform';
 import PageLoading from '../PageLoading';
 
 import UserSummary from './UserSummary';
+import SSOLinks from './SSOLinks';
 import Enrollments from './Enrollments';
 import Entitlements from './Entitlements';
 import UserSearch from './UserSearch';
@@ -56,7 +57,7 @@ export default function UserPage({ match }) {
       )}
       {!loading && username && data.user !== null && (
         <>
-          <UserSummary data={data.user} />
+          <UserSummary data={data.user} sso={data.sso} />
           <Entitlements user={username} data={data.entitlements} changeHandler={handleEntitlementsChange} />
           <Enrollments user={username} data={data.enrollments} />
         </>
