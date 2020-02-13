@@ -7,7 +7,6 @@ import { camelCaseObject, history } from '@edx/frontend-platform';
 import PageLoading from '../PageLoading';
 
 import UserSummary from './UserSummary';
-import SSOLinks from './SSOLinks';
 import Enrollments from './Enrollments';
 import Entitlements from './Entitlements';
 import UserSearch from './UserSearch';
